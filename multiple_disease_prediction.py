@@ -151,7 +151,7 @@ if (selected == 'Parkinsons Prediction'):
     #page title
     st.title('Parkinsons Prediction using ML')
     
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
     
     with col1:
         fo = st.number_input('Average vocal fundamental frequency (Hz)', min_value = 0)
@@ -159,16 +159,16 @@ if (selected == 'Parkinsons Prediction'):
     with col2:
         fhi = st.number_input('Maximum vocal fundamental frequency (Hz)', min_value = 0)
 
-    with col1:
+    with col3:
         flo = st.number_input('Minimum vocal fundamental frequency (Hz)', min_value = 0)
 
-    with col2:
+    with col1:
         Jitter_percent = st.number_input('Measure of variation in fundamental frequency MDVP:Jitter(%)', min_value = 0, max_value = 100)
 
-    with col1:
+    with col2:
         Jitter_Abs = st.number_input('Measure of variation in fundamental frequency MDVP:Jitter(Abs)', min_value = 0)
 
-    with col2:
+    with col3:
         RAP = st.number_input(' Measure of variation in fundamental frequency MDVP:RAP', min_value = 0)
 
     with col1:
@@ -177,16 +177,16 @@ if (selected == 'Parkinsons Prediction'):
     with col2:
         DDP = st.number_input('Measure of variation in fundamental frequency Jitter:DDP', min_value = 0)
         
-    with col1:
+    with col3:
         Shimmer = st.number_input('Measure of variation in amplitude MDVP:Shimmer', min_value = 0)
 
-    with col2:
+    with col1:
         Shimmer_dB = st.number_input('Measure of variation in amplitudeMDVP:Shimmer(dB)', min_value = 0)
         
-    with col1:
+    with col2:
         APQ3 = st.number_input('Measure of variation in amplitude Shimmer:APQ3', min_value = 0)
         
-    with col2:
+    with col3:
         APQ5 = st.number_input('Measure of variation in amplitude Shimmer:APQ5', min_value = 0)
         
     with col1:
@@ -195,16 +195,16 @@ if (selected == 'Parkinsons Prediction'):
     with col2:
         DDA = st.number_input('Measure of variation in amplitude Shimmer:DDA', min_value = 0)        
         
-    with col1:
+    with col3:
         NHR = st.number_input('Measure of ratio of noise to tonal components in the voiceNHR', min_value = 0)
         
-    with col2:
+    with col1:
         HNR = st.number_input('Measure of ratio of noise to tonal components in the voiceHNR', min_value = 0)
         
-    with col1:
+    with col2:
         RPDE = st.number_input('Nonlinear dynamical complexity measure (RPDE)', min_value = 0, max_value = 2)
         
-    with col2:
+    with col3:
         DFA = st.number_input('Signal fractal scaling exponent DFA', min_value = 0)
         
     with col1:
@@ -213,10 +213,10 @@ if (selected == 'Parkinsons Prediction'):
     with col2:
         spread2 = st.number_input('Nonlinear measure of fundamental frequency variation (spread2)', min_value = 0)
         
-    with col1:
+    with col3:
         D2 = st.number_input('Nonlinear dynamical complexity measure (D2)', min_value = 0)
         
-    with col2:
+    with col1:
         PPE = st.number_input('Nonlinear measure of fundamental frequency variation (PPE)', min_value = 0)
         
     #code for prediction
