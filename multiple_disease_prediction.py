@@ -9,6 +9,8 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
+st.set_page_config(layout="wide")
+
 # loading the saved models
 diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 
