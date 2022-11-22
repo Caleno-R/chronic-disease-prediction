@@ -204,22 +204,22 @@ if (selected == 'Parkinsons Prediction'):
         HNR = st.number_input('Measure of ratio of noise to tonal components in the voiceHNR', min_value = 0.0, format="%.3f")
         
     with col2:
-        RPDE = st.number_input('Nonlinear dynamical complexity measure (RPDE)', min_value = 0.0, format="%.6f)
+        RPDE = st.number_input('Nonlinear dynamical complexity measure (RPDE)', min_value = 0.0, format="%.6f")
         
     with col3:
-        DFA = st.number_input('Signal fractal scaling exponent DFA', min_value = 0.0, format="%.6f)
+        DFA = st.number_input('Signal fractal scaling exponent DFA', min_value = 0.0, format="%.6f")
         
     with col1:
-        spread1 = st.number_input('Nonlinear measure of fundamental frequency variation (spread1)', min_value = 0.0, format="%.6f)
+        spread1 = st.number_input('Nonlinear measure of fundamental frequency variation (spread1)', min_value = 0.0, format="%.6f")
 
     with col2:
-        spread2 = st.number_input('Nonlinear measure of fundamental frequency variation (spread2)',  min_value = 0.0, format="%.6f)
+        spread2 = st.number_input('Nonlinear measure of fundamental frequency variation (spread2)',  min_value = 0.0, format="%.6f")
         
     with col3:
-        D2 = st.number_input('Nonlinear dynamical complexity measure (D2)', min_value = 0.0, format="%.6f)
+        D2 = st.number_input('Nonlinear dynamical complexity measure (D2)', min_value = 0.0, format="%.6f")
         
     with col1:
-        PPE = st.number_input('Nonlinear measure of fundamental frequency variation (PPE)', min_value = 0.0, format="%.6f)
+        PPE = st.number_input('Nonlinear measure of fundamental frequency variation (PPE)', min_value = 0.0, format="%.6f")
         
     #code for prediction
     parkinsons_diagnosis = ''
