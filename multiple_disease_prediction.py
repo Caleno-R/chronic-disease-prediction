@@ -41,28 +41,28 @@ if (selected == 'Diabetes Prediction'):
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        Pregnancies = st.number_input('Number of Pregnancies', min_value = 0, max_value =30)
+        Pregnancies = st.number_input('Number of Pregnancies', min_value = 0)
     
     with col2:
-        Glucose = st.number_input('Glucose Level in mg/dL', min_value = 0, max_value = 600)
+        Glucose = st.number_input('Glucose Level in mg/dL', min_value = 0)
 
     with col3:
-        BloodPressure = st.number_input('Blood Pressure Value in mmHg', min_value = 0, max_value = 150)
+        BloodPressure = st.number_input('Blood Pressure Value in mmHg', min_value = 0)
 
     with col1:
-        SkinThickness = st.number_input('Skin Thickness Value in mm', min_value = 0, max_value = 100)
+        SkinThickness = st.number_input('Skin Thickness Value in mm', min_value = 0)
 
     with col2:
-        Insulin = st.number_input('Insulin Level in mcU/mL', min_value =0, max_value = 300)
+        Insulin = st.number_input('Insulin Level in mcU/mL', min_value =0)
 
     with col3:
-        BMI = st.number_input('BMI Value in kg/m2', min_value = 0.00, max_value = 50.00)
+        BMI = st.number_input('BMI Value in kg/m2', min_value = 0.00)
 
     with col1:
-        DiabetesPedigreeFunction = st.number_input('Diabetes Pedigree Function Value', min_value = 0.000, max_value = 2.000)
+        DiabetesPedigreeFunction = st.number_input('Diabetes Pedigree Function Value', min_value = 0.000)
 
     with col2:
-        Age = st.number_input('Age of the Person', min_value = 0, max_value = 75)
+        Age = st.number_input('Age of the Person', min_value = 0)
     
     #code for prediction
     diab_diagnosis = ''
@@ -73,10 +73,10 @@ if (selected == 'Diabetes Prediction'):
         diab_prediction = diabetes_model.predict([[Pregnancies,Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age]])
         
         if (diab_prediction[0]==1):
-            diab_diagnosis = 'The person is diabetic'
+            diab_diagnosis = 'This patient is diabetic'
             
         else:
-            diab_diagnosis = 'The person is not Diabetic'
+            diab_diagnosis = 'The patient is not diabetic'
     
     st.success(diab_diagnosis)
         
