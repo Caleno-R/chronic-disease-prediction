@@ -156,70 +156,70 @@ if (selected == 'Parkinsons Prediction'):
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        fo = st.number_input('Average vocal fundamental frequency (Hz)', min_value = 0)
+        fo = st.number_input('Average vocal fundamental frequency (Hz)', min_value = 0.0, format="%.3f")
     
     with col2:
-        fhi = st.number_input('Maximum vocal fundamental frequency (Hz)', min_value = 0)
+        fhi = st.number_input('Maximum vocal fundamental frequency (Hz)', min_value = 0.0, format="%.3f")
 
     with col3:
-        flo = st.number_input('Minimum vocal fundamental frequency (Hz)', min_value = 0)
+        flo = st.number_input('Minimum vocal fundamental frequency (Hz)', min_value = 0.0, format="%.3f")
 
     with col1:
-        Jitter_percent = st.number_input('Measure of variation in fundamental frequency MDVP:Jitter(%)', min_value = 0, max_value = 100)
+        Jitter_percent = st.number_input('Measure of variation in fundamental frequency MDVP:Jitter(%)', min_value = 0.0, format="%.5f")
 
     with col2:
-        Jitter_Abs = st.number_input('Measure of variation in fundamental frequency MDVP:Jitter(Abs)', min_value = 0)
+        Jitter_Abs = st.number_input('Measure of variation in fundamental frequency MDVP:Jitter(Abs)', min_value = 0.0, format="%.5f")
 
     with col3:
-        RAP = st.number_input(' Measure of variation in fundamental frequency MDVP:RAP', min_value = 0)
+        RAP = st.number_input(' Measure of variation in fundamental frequency MDVP:RAP', min_value = 0.0, format="%.5f")
 
     with col1:
-        PPQ = st.number_input('Measure of variation in fundamental frequency MDVP:PPQ', min_value = 0)
+        PPQ = st.number_input('Measure of variation in fundamental frequency MDVP:PPQ', min_value = 0.0, format="%.5f")
 
     with col2:
-        DDP = st.number_input('Measure of variation in fundamental frequency Jitter:DDP', min_value = 0)
+        DDP = st.number_input('Measure of variation in fundamental frequency Jitter:DDP', min_value = 0.0, format="%.5f")
         
     with col3:
-        Shimmer = st.number_input('Measure of variation in amplitude MDVP:Shimmer', min_value = 0)
+        Shimmer = st.number_input('Measure of variation in amplitude MDVP:Shimmer', min_value = 0.0, format="%.5f")
 
     with col1:
-        Shimmer_dB = st.number_input('Measure of variation in amplitudeMDVP:Shimmer(dB)', min_value = 0)
+        Shimmer_dB = st.number_input('Measure of variation in amplitudeMDVP:Shimmer(dB)', min_value = 0.0, format="%.5f")
         
     with col2:
-        APQ3 = st.number_input('Measure of variation in amplitude Shimmer:APQ3', min_value = 0)
+        APQ3 = st.number_input('Measure of variation in amplitude Shimmer:APQ3', min_value = 0.0, format="%.5f")
         
     with col3:
-        APQ5 = st.number_input('Measure of variation in amplitude Shimmer:APQ5', min_value = 0)
+        APQ5 = st.number_input('Measure of variation in amplitude Shimmer:APQ5', min_value = 0.0, format="%.5f")
         
     with col1:
-        APQ = st.number_input('Measure of variation in amplitude Shimmer:APQ', min_value = 0)        
+        APQ = st.number_input('Measure of variation in amplitude Shimmer:APQ', min_value = 0.0, format="%.5f")        
         
     with col2:
-        DDA = st.number_input('Measure of variation in amplitude Shimmer:DDA', min_value = 0)        
+        DDA = st.number_input('Measure of variation in amplitude Shimmer:DDA', min_value = 0.0, format="%.5f")        
         
     with col3:
-        NHR = st.number_input('Measure of ratio of noise to tonal components in the voiceNHR', min_value = 0)
+        NHR = st.number_input('Measure of ratio of noise to tonal components in the voiceNHR', min_value = 0.0, format="%.5f")
         
     with col1:
-        HNR = st.number_input('Measure of ratio of noise to tonal components in the voiceHNR', min_value = 0)
+        HNR = st.number_input('Measure of ratio of noise to tonal components in the voiceHNR', min_value = 0.0, format="%.3f")
         
     with col2:
-        RPDE = st.number_input('Nonlinear dynamical complexity measure (RPDE)', min_value = 0, max_value = 2)
+        RPDE = st.number_input('Nonlinear dynamical complexity measure (RPDE)', min_value = 0.0, format="%.6f)
         
     with col3:
-        DFA = st.number_input('Signal fractal scaling exponent DFA', min_value = 0)
+        DFA = st.number_input('Signal fractal scaling exponent DFA', min_value = 0.0, format="%.6f)
         
     with col1:
-        spread1 = st.number_input('Nonlinear measure of fundamental frequency variation (spread1)', min_value = 0)
+        spread1 = st.number_input('Nonlinear measure of fundamental frequency variation (spread1)', min_value = 0.0, format="%.6f)
 
     with col2:
-        spread2 = st.number_input('Nonlinear measure of fundamental frequency variation (spread2)', min_value = 0)
+        spread2 = st.number_input('Nonlinear measure of fundamental frequency variation (spread2)',  min_value = 0.0, format="%.6f)
         
     with col3:
-        D2 = st.number_input('Nonlinear dynamical complexity measure (D2)', min_value = 0)
+        D2 = st.number_input('Nonlinear dynamical complexity measure (D2)', min_value = 0.0, format="%.6f)
         
     with col1:
-        PPE = st.number_input('Nonlinear measure of fundamental frequency variation (PPE)', min_value = 0)
+        PPE = st.number_input('Nonlinear measure of fundamental frequency variation (PPE)', min_value = 0.0, format="%.6f)
         
     #code for prediction
     parkinsons_diagnosis = ''
