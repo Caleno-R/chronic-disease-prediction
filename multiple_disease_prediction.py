@@ -128,7 +128,7 @@ if (selected == 'Heart Disease Prediction'):
         ca = st.number_input('Major vessels colored by flourosopy (0-3)', min_value = 0, max_value = 4)
         
     with col1:
-        thal = st.number_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect', min_value = 0, max_value = 2)
+        thal = st.number_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect', min_value = 0, max_value = 5)
     
     #code for prediction
     heart_diagnosis = ''
